@@ -24,7 +24,7 @@ angular.module('tagyCmsComponentsDemoApp')
                                 <br/><br/>This is first release so there is some more work to do. If you like the concept or Wordpress plugin go to <strong>http://tagy.cnvrtly.com</strong>&nbsp;for more.\
                                 \
                                 </p>\
-                                <p tagy-cms-editable="paragraph 2">Want to see Tagy in action? I built landing page optimization app with CMS on Google App Engine - visit http://cnvrtly.com. If you have any questions or comments contact me at <strong>hello.hirsman@gmail.com</strong>. </p>\
+                                <p tagy-cms-editable="paragraph 2">Want to see Tagy in action? I built landing page optimization app with CMS on Google App Engine - visit http://cnvrtly.com. If you have any questions or comments contact me at <strong>matjaz.online@gmail.com</strong>. </p>\
 \
                                     <h3 tagy-cms-editable="gallery title">"tagy-cms-gallery" attribute&nbsp; on parent element makes adding/removing items automagically simple</h3>\
                                     <ul tagy-cms-gallery="">\
