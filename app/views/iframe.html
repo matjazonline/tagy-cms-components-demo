@@ -1,0 +1,35 @@
+<div class="row" tagy-cms-component="root elements">
+
+
+<div class="small-5 columns column-resize">
+    <div class="panel">
+
+        <p>Tagy editable components on page:</p>
+        <tagy-cms-Component-List></tagy-cms-Component-List>
+
+        <a href="" ng-hide="showMarkup" class="button tiny" ng-click="showMarkup=!showMarkup">show HTML</a>
+        <a href="" ng-show="showMarkup" class="button tiny " ng-click="showMarkup=!showMarkup">hide HTML</a>
+        <!--<a href="" ng-show="showMarkup" class="button tiny " ng-click="clearHtml()">blank HTML</a>-->
+        <div ng-show="showMarkup">
+            <!--<small>you can change it and click "preview changes" below</small>-->
+        <!--<a class="button" ng-click="loadTest(1)">load markup 1</a>
+        <a class="button" ng-click="loadTest(2)">load markup 2</a>-->
+        <html-Markup-Editor-Dr edit-html="{{editHtml}}"></html-Markup-Editor-Dr>
+        <a href="" class="button tiny secondary" ng-click="showHtml()">show HTML</a>
+        </div>
+        <p><small>When editing an image on page choose from these below.</small></p>
+        <a href=""  ng-click="selectImage('https://angularjs.org/img/ng-europe-logo-compact-on-white.png')"><img style="max-width: 45%;" src="https://angularjs.org/img/ng-europe-logo-compact-on-white.png"/></a>
+        <a href=""   ng-click="selectImage('https://angularjs.org/img/AngularJS-large.png')"><img style="max-width: 45%" src="https://angularjs.org/img/AngularJS-large.png"/></a>
+        <a href=""   ng-click="selectImage('http://lh5.ggpht.com/vavJdttSCNmJihsnGJ5f8r7qKXnt25u36CQ9jUDk_VfPG5OFY_4LyMALWE0Cg_PFf47EqaYSgAsMDuOeWswnqEkXKhDZrB3Oj2NZkfkR')"><img style="max-width: 45%" src="http://lh5.ggpht.com/vavJdttSCNmJihsnGJ5f8r7qKXnt25u36CQ9jUDk_VfPG5OFY_4LyMALWE0Cg_PFf47EqaYSgAsMDuOeWswnqEkXKhDZrB3Oj2NZkfkR"/></a>
+        <a href=""   ng-click="selectImage('http://lh4.ggpht.com/-zQOAsAK1jOGp-CtoZmxbB7vlvAT65WLbx0iqAoQw9v0Uix_rlw0CypErCX0oEpyihy19ld2U_62jS-U=s300')"><img style="max-width: 45%" src="http://lh4.ggpht.com/-zQOAsAK1jOGp-CtoZmxbB7vlvAT65WLbx0iqAoQw9v0Uix_rlw0CypErCX0oEpyihy19ld2U_62jS-U=s300"/></a>
+
+    </div>
+</div>
+
+
+<div class="small-7 columns">
+    <iframe-preview-editor-dr ng-show="previewMode"></iframe-preview-editor-dr>
+</div>
+
+
+</div>

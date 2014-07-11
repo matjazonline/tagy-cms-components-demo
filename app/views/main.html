@@ -1,0 +1,51 @@
+<div class="row" tagy-cms-component="root elements">
+
+
+<div class="small-5 columns column-resize">
+    <div class="panel">
+
+        <tagy-cms-Component-List></tagy-cms-Component-List>
+        <p>When editing an image element you can select different path. Below are some options - these otherwise load from available files in CMS.</p>
+        <a href="" class="button tiny" ng-click="selectImage('https://angularjs.org/img/ng-europe-logo-compact-on-white.png')"><img style="max-width: 100%" src="https://angularjs.org/img/ng-europe-logo-compact-on-white.png"/></a>
+        <a href="" class="button tiny"  ng-click="selectImage('https://angularjs.org/img/AngularJS-large.png')"><img style="max-width: 100%" src="https://angularjs.org/img/AngularJS-large.png"/></a>
+        <a href="" class="button tiny"  ng-click="selectImage('http://lh5.ggpht.com/vavJdttSCNmJihsnGJ5f8r7qKXnt25u36CQ9jUDk_VfPG5OFY_4LyMALWE0Cg_PFf47EqaYSgAsMDuOeWswnqEkXKhDZrB3Oj2NZkfkR')"><img style="max-width: 100%" src="http://lh5.ggpht.com/vavJdttSCNmJihsnGJ5f8r7qKXnt25u36CQ9jUDk_VfPG5OFY_4LyMALWE0Cg_PFf47EqaYSgAsMDuOeWswnqEkXKhDZrB3Oj2NZkfkR"/></a>
+
+    </div>
+</div>
+
+
+<div class="small-7 columns">
+
+    <div class="row" tagy-cms-component editable-title="editable header" editable-description="comp desc">
+        <div class="small-12 columns"  tagy-cms-editable editable-title="bg" editable-props="background-image"><h1 tagy-cms-editable editable-title="edit this title" editable-description="jumbotron title">Editable directive!</h1>
+
+            <p tagy-cms-editable="" editable-title="edit body top" editable-description="change body">Just add "tagy-cms-editable"
+                attribute to an element and you can edit its content. Click me or select from auto generated
+                editable elements
+                in the sidebar. </p>
+            <a href="http://link.com"  tagy-cms-editable="" editable-title="link 1" editable-props>
+                <p tagy-cms-editable="" editable-title="edit body middle paragraph" editable-description="change
+        body">Markup will be updated directly through AngularJS directives.</p>    </a>
+            <img tagy-cms-editable="" editable-title="image title" editable-description="description" src="http://venturebeat.files.wordpress.com/2012/03/app-engine.png">
+            <br/><small tagy-cms-editable="below image text">click on image then select one from the bottom of sidebar to change it</small><br/><br/><br/>
+            <p tagy-cms-editable="" editable-title="edit body below" editable-description="change body">Angular events are used
+                and decoupled <br/>components so you can <a href="http://bbc.cocm">extend </a> behaviour easily. For example you could add mouse over
+                effects and
+                other UI feedback methods.</p>
+            <span tagy-cms-editable="on GitHub"><a class="button"
+                                                  href="https://github.com/m-a-t-t/bower-tagy-components">checkout
+                at GitHub</a><br/> or use <code>bower install tagy-components --save</code>
+                <br/>
+                note: when HTML is loaded in Tagy editor links do not work (it's not implemented yet to enable them) - when HTML is loaded on its own all links are functional.
+            </span></div>
+    </div>
+
+
+
+    <div tagy-cms-component="" editable-title="bottom text" editable-description="comp desc"><p
+            tagy-cms-editable="" editable-title="bottom text" editable-description="edit modal title">Bottommmm text</p></div>
+
+
+</div>
+
+</div>

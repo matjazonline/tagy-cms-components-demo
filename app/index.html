@@ -1,0 +1,112 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Tagy CMS components demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/foundation/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="tagyCmsComponentsDemoApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <h1> <a href="http://tagy.cnvrtly.com" target="_blank"><img style="max-height: 40px;" src="images/tagy-cms-fb-icon.png"/> </a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li class="active"><a href="http://tagy.cnvrtly.com" target="_blank"><i class="fa fa-globe fa-2x"></i> visit Tagy website</a></li>
+            </ul>
+
+            <!-- Left Nav Section -->
+            <!--<ul class="left" ng-controller="NavCtrl">
+                <li><a href="" ng-click="reload('/')"><i class="fa fa-dot-circle-o"></i> basic inline editor</a></li>
+                <li><a href="" ng-click="reload('/gallery')"><i class="fa fa-dot-circle-o"></i> gallery</a></li>
+                <li><a href="" ng-click="reload('/gallery-of-components')"><i class="fa fa-dot-circle-o"></i> gallery of components</a></li>
+                <li><a href="/#/iframe"><i class="fa fa-dot-circle-o"></i> iframe editor</a></li>
+            </ul>-->
+        </section>
+    </nav>
+
+    <!-- Add your site or application content here -->
+    <div ng-view=""></div>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- build:js scripts/vendor.js -->
+    <script src="bower_components/foundation/js/vendor/jquery.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+    <script src="bower_components/tinymce/tinymce.min.js"></script>
+    <script src="bower_components/ace-builds/src-min-noconflict/ace.js"></script>
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-uuid/uuid.min.js"></script>
+    <script src="bower_components/angular-ui-tinymce/src/tinymce.js"></script>
+    <script src="bower_components/angular-ui-ace/ui-ace.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/tagy-scripts.js -->
+        <script src="bower_components/tagy-components/directives/tagy-cms-editable.js"></script>
+        <script src="bower_components/tagy-components/directives/tagy-cms-component.js"></script>
+        <script src="bower_components/tagy-components/directives/tagy-cms-component-list.js"></script>
+        <script src="bower_components/tagy-components/directives/tagy-cms-gallery.js"></script>
+        <script src="bower_components/tagy-components/directives/tagy-cms-item-editor.js"></script>
+        <script src="bower_components/tagy-components/directives/tagy-cms-editable-style.js"></script>
+        <script src="bower_components/tagy-components/directives/tagy-cms-shared-id.js"></script>
+        <script src="bower_components/tagy-components/directives/html-markup-editor-dr.js"></script>
+        <script src="bower_components/tagy-components/directives/html-markup-editor-ace.js"></script>
+        <script src="bower_components/tagy-components/directives/iframe-preview-editor-dr.js"></script>
+        <script src="bower_components/tagy-components/directives/style-editor.js"></script>
+        <script src="bower_components/tagy-components/directives/style-value-editor-dr.js"></script>
+        <script src="bower_components/tagy-components/services/editable-ser.js"></script>
+        <script src="bower_components/tagy-components/services/cross-frame-connection.js"></script>
+        <script src="bower_components/tagy-components/services/cross-frame-editable-service.js"></script>
+        <script src="bower_components/tagy-components/services/edit-html-service.js"></script>
+        <script src="bower_components/tagy-components/services/editable-component-factory.js"></script>
+        <script src="bower_components/tagy-components/services/editable-content-factory.js"></script>
+        <script src="bower_components/tagy-components/services/editable-message-channel.js"></script>
+        <script src="bower_components/tagy-components/services/editable-style-item-factory.js"></script>
+        <script src="bower_components/tagy-components/services/editable-style-ser.js"></script>
+        <script src="bower_components/tagy-components/services/markup-change-id-fac.js"></script>
+        <script src="bower_components/angular-uuid/uuid.js"></script>
+        <script src="scripts/directives/column-resize.js"></script>
+        <script src="scripts/controllers/nav.js"></script>
+        <script src="scripts/controllers/iframe.js"></script>
+        <!-- endbuild -->
+
+
+</body>
+</html>
